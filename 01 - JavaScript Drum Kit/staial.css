@@ -30,22 +30,35 @@ body{
 .piano-keys__keys--black{
     background:black;
     color:white;
-    padding:13rem 2rem 1rem 2rem;
+    width:4rem;
+    height:18rem;
+    padding-top:15rem;
+    transition: all .07s ease;
 }
 .piano-keys__keys--white{
     background:white;
     padding:19rem 3rem 1rem 3rem;
+    width:7rem;
+    height:22rem;
     border:1px solid black;
+    transition: all .07s ease;
 }
 
 .black{
     display:flex;
-    justify-content:space-evenly;
+    flex-direction:row-reverse;
+    justify-content:space-around;
     width:100%;
     position:absolute;
-    left:0;
+    left:3.7rem;
     z-index: 1;
 }
-#blank{
+.blank{
     background:none;
+}
+
+.playing{
+    /* background:rgba(197, 196, 196, 0.9); */
+    transform: scale(1.01);
+    box-shadow:0 0 1rem #ff3d3dd3;
 }
